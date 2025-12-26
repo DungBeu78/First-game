@@ -1,0 +1,19 @@
+# Bỏ qua file exe
+*.exe
+
+# Bỏ file obj (compile intermediate)
+*.obj
+
+# Bỏ thư mục build
+/build/
+/Debug/
+/Release/
+
+# Visual Studio
+.vs/
+
+# VSCode config
+.vscode/
+
+# Log files
+*.log
