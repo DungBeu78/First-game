@@ -3,25 +3,27 @@
 #include <ctime>
 using namespace std;
 
-int main() {
+int main()
+{
     srand(time(0));
     int secret = rand() % 100 + 1;
     int guess;
     int attempts = 0;
 
-    cout << "Chao mung ban den voi game doan so!\n";
+    cout << "Choose the right number! (67 maybe?) \n";
 
-    do {
-        cout << "Nhap so tu 1 - 100: ";
+    do
+    {
+        cout << "Give me a number from 1 to 100: ";
         cin >> guess;
         attempts++;
 
         if (guess > secret)
-            cout << "Lon hon roi!\n";
+            cout << "Oh shit, it's bigger than mine!\n";
         else if (guess < secret)
-            cout << "Nho hon roi!\n";
+            cout << "Damn, mine is bigger!\n";
         else
-            cout << "Chinh xac! Ban da doan dung sau " << attempts << " lan.\n";
+            cout << "Bingo! You got it right after " << attempts << " tries.\n";
 
     } while (guess != secret);
 
